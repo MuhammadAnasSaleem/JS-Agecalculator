@@ -21,7 +21,13 @@ function finalDate() {
 
     // Update the HTML content with the calculated age
     const Age = document.getElementById("Age");
-    Age.innerHTML = `<p>Age: ${age.years} Years, ${age.months} Months, ${age.days} Days</p>`;
+    if(age.years >= 0){
+        Age.innerHTML = `<p>Age: ${age.years} Years,<br> ${age.months} Months,<br> ${age.days} Days</p>`;
+
+    }
+    else{
+        Age.innerHTML = `<p> Sorry !! you are still in development <p>`
+    }
 }
 
 function ageCalculator(yearNow, monthNow, dateNow, userYear, userMonth, userDate) {
