@@ -43,8 +43,9 @@ function ageCalculator(yearNow, monthNow, dateNow, userYear, userMonth, userDate
     if (days < 0) {
         const lastDayOfMonth = new Date(yearNow, monthNow - 1, 0).getDate();
         days += lastDayOfMonth;
-        months--; // Adjust months if borrowing from previous month
+        months--; // Adjust months if borrowing from previous month .
     }
 
     return { years, months, days };
 }
+// this is a practice project
