@@ -7,10 +7,23 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg,#003166,#00152b);
+    background: linear-gradient(45deg,#003166,#00152b,#2a4117,#3ab800);
     display: flex;
+    background-size: 300% 300%;
     justify-content: center;
     align-items: flex-start;
+    animation: color 30s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 .label{
     display: inline-block;
