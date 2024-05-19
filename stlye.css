@@ -7,7 +7,7 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg,#003166,#00152b,#2a4117,#3ab800);
+    background: linear-gradient(45deg,#003166,#00152b,#2a4117,#3ab80042);
     display: flex;
     background-size: 300% 300%;
     justify-content: center;
